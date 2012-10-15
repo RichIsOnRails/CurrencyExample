@@ -1,0 +1,9 @@
+<%=number_to_currency 123456.50 %><br />
+<%=number_to_currency 123456.506 %><br />
+<%=number_to_currency 123456.506, precision: 3 %><br />
+<%=number_to_currency 123456.506, local: :fr %><br />
+<%=number_to_currency "123a456" %><br />
+<%=number_to_currency "123a456", raise: true %><br />
+<%=number_to_currency -123456.50, :negative_format => "(%u%n)" %><br />
+<%=number_to_currency 123456.50, unit: "&pound;", seperator: ",", delimiter: "" %><br />
+<%=number_to_currency 123456.50, unit: "&pound;", separator: ",", delimiter: "", format: "%n %u" %><br />
